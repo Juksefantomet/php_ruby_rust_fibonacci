@@ -60,15 +60,18 @@ The scripts calculate the Fibonacci sequence for `n = 35` (or higher for heavier
    ```bash
    ruby fiber.rb
    ```
-3. Example output:
+3. Actual Ruby output:
    ```
-   Ruby Result: 9227465
-   Rust Result: 9227465
+Result: 1134903170
+Result: 1134903170
+                 user     system      total        real
+Ruby:      164.275651   0.001685 164.277336 (164.310020)
+Rust (FFI):  5.334036   0.000000   5.334036 (  5.337674)
 
-   Comparison Summary:
-   Ruby Execution Time: 705.85 ms
-   Rust Execution Time: 0.01 ms
-   Rust is 7058500.0% faster than Ruby for n=35.
+Comparison Summary:
+Ruby Execution Time: 85419.49 ms
+Rust Execution Time: 2677.5 ms
+Rust is 3190.28% faster than Ruby for n=45.
    ```
 
 ### 3. Run the PHP Benchmark
@@ -77,15 +80,15 @@ The scripts calculate the Fibonacci sequence for `n = 35` (or higher for heavier
    ```bash
    php fiber.php
    ```
-3. Example output:
+3. Actual PHP output:
    ```
-   PHP Result: 9227465
-   Rust Result: 9227465
+PHP Result: 1134903170
+Rust Result: 1134903170
 
-   Comparison Summary:
-   PHP Execution Time: 1200.45 ms
-   Rust Execution Time: 0.01 ms
-   Rust is 12004500.0% faster than PHP for n=35.
+Comparison Summary:
+PHP Execution Time: 34809.74 ms
+Rust Execution Time: 2450.15 ms
+Rust is 1420.72% faster than PHP for n=45.
    ```
 
 ## Key Takeaways
