@@ -60,14 +60,14 @@ The scripts calculate the Fibonacci sequence for `n = 35` (or higher for heavier
    ```bash
    ruby fiber.rb
    ```
-3. Actual Ruby output:
+3. Actual Ruby output (ruby v3.3.6):
    ```
    Result: 1134903170
    Result: 1134903170
                     user     system      total        real
    Ruby:      164.275651   0.001685 164.277336 (164.310020)
    Rust (FFI):  5.334036   0.000000   5.334036 (  5.337674)
-   
+
    Comparison Summary:
    Ruby Execution Time: 85419.49 ms
    Rust Execution Time: 2677.5 ms
@@ -80,7 +80,7 @@ The scripts calculate the Fibonacci sequence for `n = 35` (or higher for heavier
    ```bash
    php fiber.php
    ```
-3. Actual PHP output:
+3. Actual PHP output (PHP v8.3.6):
    ```
    PHP Result: 1134903170
    Rust Result: 1134903170
@@ -99,6 +99,7 @@ The scripts calculate the Fibonacci sequence for `n = 35` (or higher for heavier
 ### Ruby
 - Ruby 2.7+
 - `ffi` gem (install with `gem install ffi`)
+- simply `bundle install`
 
 ### PHP
 - PHP 7.4+
